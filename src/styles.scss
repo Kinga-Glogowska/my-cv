@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap");
-@import "_variables";
-@import "hero";
-@import "skills";
-@import "projects";
-@import "contact";
-@import "socials";
+@import "../src/modules-scss/_variables.scss";
+@import "../src/modules-scss/hero.scss";
+@import "../src/modules-scss/skills.scss";
+@import "../src/modules-scss/projects.scss";
+@import "../src/modules-scss/contact.scss";
+@import "../src/modules-scss/socials.scss";
 
 html {
   box-sizing: border-box;

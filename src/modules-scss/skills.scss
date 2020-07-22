@@ -30,9 +30,9 @@
       content: "";
       width: 12px;
       height: 9px;
-      background: url("../small-tick-green.svg");
+      background: url("../src/icon/small-tick-green.svg");
       .skills-list--blue & {
-        background: url("../small-tick-blue.svg");
+        background: url("../src/icon/small-tick-blue.svg");
       }
       .skills-list--dot & {
         width: 2px;

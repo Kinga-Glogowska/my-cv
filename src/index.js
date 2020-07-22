@@ -1,6 +1,7 @@
 import "./styles.scss";
-import "../github.svg";
-import "../github-blue.svg";
-import "../instagram.svg";
-import "../facebook.svg";
+import "../src/icon/github.svg";
+import "../src/icon/github-blue.svg";
+import "../src/icon/instagram.svg";
+import "../src/icon/facebook.svg";
+import "../src/icon/speech.svg";
 console.log("hello wossrld!");
