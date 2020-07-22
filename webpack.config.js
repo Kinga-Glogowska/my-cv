@@ -1,17 +1,17 @@
-const webpack = require('webpack');
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
-  entry: './src/',
+  entry: "./src/",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
-      filename: 'index.html'
+      filename: "index.html",
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
@@ -19,32 +19,35 @@ const config = {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.png$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
+              mimetype: "image/png",
+            },
+          },
+        ],
       },
       {
         test: /\.svg$/,
-        use: 'file-loader'
-      }
-    ]
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
+    ],
   },
   devServer: {
-    contentBase: './dist'
-  }
+    contentBase: "./dist",
+  },
 };
 
 module.exports = config;

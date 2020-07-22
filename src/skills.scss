@@ -11,7 +11,6 @@
 
 .skills-list {
   font-weight: normal;
-
   color: $lighterBlue;
   width: 288px;
   margin: 0 auto;
@@ -20,28 +19,28 @@
   &__item {
     padding: 0 0 0 24px;
     margin: 0 0 16px;
-    position: relative;  
+    position: relative;
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
     display: block;
     &:before {
       position: absolute;
       left: 0;
       top: 7px;
-      content: '';
+      content: "";
       width: 12px;
       height: 9px;
-      background: url('../small-tick-green.svg');
+      background: url("../small-tick-green.svg");
       .skills-list--blue & {
-      background: url('../small-tick-blue.svg');
+        background: url("../small-tick-blue.svg");
       }
       .skills-list--dot & {
-      width: 2px;
-      height: 2px;
-      border-radius: 50%;
-      top: 11px;
-      left: 5px;
-      background: $lighterBlue;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        top: 11px;
+        left: 5px;
+        background: $lighterBlue;
       }
     }
   }
