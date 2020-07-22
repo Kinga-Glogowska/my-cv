@@ -3,7 +3,8 @@
 @import "hero";
 @import "skills";
 @import "projects";
-
+@import "contact";
+@import "socials";
 
 html {
   box-sizing: border-box;
@@ -18,4 +19,6 @@ html {
 body {
   font-family: Nunito;
   color: $text;
+  width: 100%;
+  margin: 0em;
 }
