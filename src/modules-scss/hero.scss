@@ -6,6 +6,7 @@
   }
   @media (min-width: $desktop) {
     max-width: 100%;
+    padding-bottom: 176px;
   }
   &__bubble {
     position: absolute;
@@ -20,8 +21,12 @@
     padding: 4px 20px;
     font-weight: bold;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 36px;
     text-decoration: none;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__description {
     text-align: center;
@@ -98,6 +103,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @media (min-width: $desktop) {
+      margin-bottom: 48px;
+    }
   }
   &__link {
     font-weight: bold;
@@ -113,6 +121,7 @@
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 48px;
+      margin-bottom: 68px;
     }
   }
   &__special {

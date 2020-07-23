@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   margin: 56px 65px;
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
   &__items {
     margin: 0 12px;
   }
