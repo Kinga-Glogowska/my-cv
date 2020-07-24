@@ -5,9 +5,11 @@
 @import "../src/modules-scss/projects.scss";
 @import "../src/modules-scss/contact.scss";
 @import "../src/modules-scss/socials.scss";
+@import "../src/modules-scss/hand.scss";
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
